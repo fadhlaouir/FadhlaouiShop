@@ -1,8 +1,11 @@
 <template>
   <div>
-    <h1>My Shop</h1>
+    <h1>Fadhlaoui's Shop</h1>
     <navbar :cart="cart" :cartQty="cartQty" :cartTotal="cartTotal"></navbar>
-    <price-slider :sliderStatus="sliderStatus" :maximum.sync="maximum"></price-slider>
+    <price-slider
+      :sliderStatus="sliderStatus"
+      :maximum.sync="maximum"
+    ></price-slider>
     <product-list :maximum="maximum" :products="products"></product-list>
   </div>
 </template>
